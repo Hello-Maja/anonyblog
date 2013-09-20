@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Confirm Deletion</h1>
+  <p> Please note this action can not be reversed.</p>
+
+  <table>
+    <%= erb :_post_display.erb %>   
+    <tr>
+        <form name="delete post" action="/delete/<%= @post.id %>" method="POST">
+        <input class="button" type="submit" value="Delete This Post">
+        </form>
+    </tr>  
+  </table>
+</div>
+
+
+

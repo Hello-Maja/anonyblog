@@ -1,0 +1,20 @@
+    <tr>
+      <th>Date Created</th>
+      <th>Title</th>
+    </tr>
+      <% @posts.each do |post| %>
+    <tr>
+      <td>
+        <%= post.created_at %>
+        </td>
+       <td> <a class="postlinks" href="/post/<%= post.id %>"><%= post.title %> </a>
+      </td>
+      <% end %>
+    </tr>  
+      <td></td>
+    </tr>
+
+
+        <option value="author">View by Author</option>
+    <option value="date">View by Date</option>
+    <option value="tag">View by Tag</option>

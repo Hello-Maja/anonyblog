@@ -1,0 +1,19 @@
+    <tr>
+      <th>Tag</th>
+      <th>Post Title</th>
+    </tr>
+      <% @tags.each do |tag| %>
+    <tr>
+      <td>
+        <%= tag.id %>
+      </td>
+      <td> <a class="post-links" href="/post/<%= tag.id %>"><%= tag.tag %> </a>
+      </td>
+      <% end %>
+    </tr>  
+      <td></td>
+    </tr>
+
+
+
+

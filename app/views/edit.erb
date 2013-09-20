@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>Edit Post</h1>
+
+<form name="edit" action="/edit/<%= @post.id %>" method="POST">
+    <class="post-author">
+      <span > Originally Created: <%= @post.created_at %></span>
+      <br>
+      <span >       Last Updated: <%= @post.updated_at %></span>
+    <br>
+    <br>  
+    <class="post-author">
+      <span> By <%= @post.author %></span>
+      <br>
+      Edit author: <input type="text" name="edit[:author]">
+      <br>
+      <br>
+    <class="post-title">  
+      Title:  <%= @post.title %>
+      <br>       
+      Edit title: <input type="text" name="edit[:title]">
+      <br>
+      <br>
+      <br>
+      <span class="post-body"><%= @post.body %></span> 
+      <br>     
+    	<textarea name="body" form="body" rows="20" cols="80">
+      </textarea>
+  <br>          
+  <br>    
+  <input class="button" type="submit" value="Save Changes">
+  </form>
+  <br>
+  OR
+  <br>
+  <br>
+  <form name="confirm delete post" action="/confirm_delete/<%= @post.id %>" method="POST">
+  <input class="button" type="submit" value="Delete This Post">
+  </form>
+
+</div>  

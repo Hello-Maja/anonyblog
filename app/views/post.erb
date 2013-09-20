@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Post</h1>
+
+<table>
+  <%= erb :_post_display %>  
+     <tr>
+      <td>
+        <form name="edit post" action="/edit/<%= @post.id %>" method="GET">
+        <input class="button" type="submit" value="Update this post">
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+

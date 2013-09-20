@@ -1,9 +1,129 @@
+body {
+  font-family: Merriweather, Georgia;
+  color: #4d4d4d;
+}
+ 
+ .micro-byline {
+   padding: 0 auto;
+   margin-top: -10px;
+   margin-left: 2px;
+   font-style: italic;
+   font-size: 13px;
+ }
+
 .container {
-  margin: 20px auto;
+  position: relative;
+  margin: 100px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  border: 5px solid #104476;
+  border-radius:15px;
 }
 th {
   text-align: left;
+}
+ 
+.logo {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline;
+  width: 100%;
+  background-color: #104476;
+  line-height: 40px;
+}
+ 
+.byline {
+  margin-top: auto 0px;
+  margin-left: 3px;
+  color: #4d4d4d;
+}
+ 
+.post-tag {
+ font-style: italic;
+ font-size: 15px;
+ color: #155899;
+ margin-bottom: 50px;
+} 
+
+.post-date td{
+
+}
+
+.post-author {
+ margin-top: 50px;
+}
+
+.post-author td {
+  padding-top: 10px ;
+}
+.post-title td {
+  font-weight: bold;
+  border-spacing: 20px;
+  padding-top: 30px;
+} 
+
+.post-body {
+  padding-top: 20px;
+
+}
+
+.nav-div {
+/*  position: relative;
+  float: top;*/
+  background-color: #104476;
+  width: 100%;
+}
+ 
+.nav-links {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  float: left;
+  margin-top: -10px;
+  margin-left: 20px;
+/*  background-color: gray;*/
+}
+ 
+h1 {
+  color: #104476;
+  margin-bottom: 10px;
+}
+ 
+.button {
+  color: #4d4d4d;
+  border-radius: 5px;
+  background-color: #D1D7DE;
+  margin-bottom: 8px;
+}
+ 
+ 
+#url {
+  background-color: #F2F9FF;
+  border-radius: 5px;
+  width: 60%;
+}
+ 
+.url {
+    color: black;
+}
+ 
+.signup-link {
+  color: black;
+  text-decoration: none;
+  padding-top: 15px;
+}
+ 
+#name {
+  margin-left: 48px;
+}
+ 
+#email {
+  margin-left: 50px;
+}
+ 
+#password {
+  margin-left: 20px;
 }
